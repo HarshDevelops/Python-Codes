@@ -32,7 +32,7 @@ else:
     sob=input()
     if(sob=="swim"):
         print("Game Over")
-    else:left
+    else:
         print("Your Boat is here")
         print("You've reached the island")
         print("You have 3 doors in front of you!")
