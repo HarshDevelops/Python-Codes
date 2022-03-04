@@ -1,17 +1,19 @@
-ranges={
-    "Test1":[20,30],
-    "Test2":[35.5,40],
-    "Test3":[12,15],
-    "Test4":[120,150],
-    "Test5":[80,120],
-    }
-
-t_name=input("Enter Test Name: ")
-t_value=int(input("Enter Test Value: "))
-
-if(t_value>(ranges[t_name][1]) or t_value<(ranges[t_name][0])):
-    print("Abnormal")
-else:
-    print("Normal")
+data=(input("Enter Data: "))
+data=data.split(',')
+index=1
+while (index<len(data)):
+    left=0
+    for i in range(index):
+        if(index==i):
+            continue
+        else:
+            left=left+int(data[i])
+        
+    right=0
+    for j in range(index+1,len(data)):
+        right+=int(data[j])
+        
+    print(f"index:{index}, leftsum: {left}, rightsum:  {right}")
+    index=index+1
 
     
